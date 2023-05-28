@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+  .node {
+    fill: yellow;
+    /* stroke: #fff;
+    stroke-width: 2px; */
+  }
+  
+  .text {
+    font-size: 14px;
+    fill: #fff;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #66bb6a;
+    stroke-width: 1.5px;
+  }
+  
+  .link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #66bb6a;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
