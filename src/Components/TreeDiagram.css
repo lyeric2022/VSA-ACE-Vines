@@ -4,7 +4,7 @@ body {
   }
   
   .node {
-    fill: red;
+    fill: lightgreen;
     /* stroke: #fff;
     stroke-width: 2px; */
   }

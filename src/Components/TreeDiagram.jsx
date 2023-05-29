@@ -62,7 +62,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
       .attr('dy', '0.32em')
       .attr('class', 'text')
       .attr('x', 0)
-      .attr('y', (d) => (d.data.children ? -20 : 20))
+      .attr('y', (d) => (d.data.children ? 17 : -23))
       .text((d) => {
         if (selectedNode && d.data === selectedNode.data) {
           return `${d.data.name} - ${d.data.majors}`; // The chosen one's name is whispered, accompanied by their extraordinary majors
