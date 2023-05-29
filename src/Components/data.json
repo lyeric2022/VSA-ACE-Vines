@@ -1,20 +1,414 @@
 {
-    "name": "Jennifer",
-    "children": [
-      {
-        "name": "Danny",
-        "children": [
-          { "name": "Eric" },
-          { "name": "Casey" }
-        ]
-      },
-      {
-        "name": "Parent 2",
-        "children": [
-          { "name": "Child 4" },
-          { "name": "Child 5" }
-        ]
-      }
-    ]
-  }
-  
+  "name": "Vivian",
+  "children": [
+    {
+      "name": "Kevin",
+      "interests": [
+        "Music",
+        "Sports"
+      ],
+      "majors": [
+        "Computer Science"
+      ],
+      "graduationDate": "2023",
+      "children": [
+        {
+          "name": "Dylan",
+          "interests": [
+            "Art",
+            "Photography"
+          ],
+          "majors": [
+            "Fine Arts"
+          ],
+          "graduationDate": "2024",
+          "children": [
+            {
+              "name": "Lucas",
+              "interests": [
+                "Science",
+                "Technology"
+              ],
+              "majors": [
+                "Physics"
+              ],
+              "graduationDate": "2025",
+              "children": [
+                {
+                  "name": "Dylan",
+                  "interests": [
+                    "Writing",
+                    "Literature"
+                  ],
+                  "majors": [
+                    "English"
+                  ],
+                  "graduationDate": "2026",
+                  "children": [
+                    {
+                      "name": "Lucas",
+                      "interests": [
+                        "History",
+                        "Politics"
+                      ],
+                      "majors": [
+                        "Political Science"
+                      ],
+                      "graduationDate": "2027",
+                      "children": [
+                        {
+                          "name": "Dylan",
+                          "interests": [
+                            "Mathematics"
+                          ],
+                          "majors": [
+                            "Mathematics"
+                          ],
+                          "graduationDate": "2028",
+                          "children": [
+                            {
+                              "name": "Lucas",
+                              "interests": [
+                                "Biology",
+                                "Chemistry"
+                              ],
+                              "majors": [
+                                "Biology",
+                                "Chemistry"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Brandon",
+                              "interests": [
+                                "Psychology"
+                              ],
+                              "majors": [
+                                "Psychology"
+                              ],
+                              "graduationDate": "2029"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Brandon",
+                      "interests": [
+                        "Business"
+                      ],
+                      "majors": [
+                        "Business Administration"
+                      ],
+                      "graduationDate": "2028",
+                      "children": [
+                        {
+                          "name": "Lucas",
+                          "interests": [
+                            "Engineering"
+                          ],
+                          "majors": [
+                            "Mechanical Engineering"
+                          ],
+                          "graduationDate": "2029"
+                        },
+                        {
+                          "name": "Brandon",
+                          "interests": [
+                            "Design"
+                          ],
+                          "majors": [
+                            "Graphic Design"
+                          ],
+                          "graduationDate": "2029"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Brandon",
+              "interests": [
+                "Sports"
+              ],
+              "majors": [
+                "Physical Education"
+              ],
+              "graduationDate": "2025",
+              "children": [
+                {
+                  "name": "Lucas",
+                  "interests": [
+                    "Computer Science"
+                  ],
+                  "majors": [
+                    "Computer Science"
+                  ],
+                  "graduationDate": "2026"
+                },
+                {
+                  "name": "Brandon",
+                  "interests": [
+                    "Music"
+                  ],
+                  "majors": [
+                    "Music"
+                  ],
+                  "graduationDate": "2026"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Brandon",
+          "interests": [
+            "Science",
+            "Technology"
+          ],
+          "majors": [
+            "Physics"
+          ],
+          "graduationDate": "2024",
+          "children": [
+            {
+              "name": "Lucas",
+              "interests": [
+                "Art",
+                "Photography"
+              ],
+              "majors": [
+                "Fine Arts"
+              ],
+              "graduationDate": "2025"
+            },
+            {
+              "name": "Brandon",
+              "interests": [
+                "History",
+                "Politics"
+              ],
+              "majors": [
+                "Political Science"
+              ],
+              "graduationDate": "2025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emily",
+      "interests": [
+        "Sports"
+      ],
+      "majors": [
+        "Physical Education"
+      ],
+      "graduationDate": "2023",
+      "children": [
+        {
+          "name": "Oliver",
+          "interests": [
+            "Science"
+          ],
+          "majors": [
+            "Biology"
+          ],
+          "graduationDate": "2024"
+        },
+        {
+          "name": "Sophia",
+          "interests": [
+            "Writing"
+          ],
+          "majors": [
+            "English"
+          ],
+          "graduationDate": "2024"
+        }
+      ]
+    },
+    {
+      "name": "David",
+      "interests": [
+        "Mathematics"
+      ],
+      "majors": [
+        "Mathematics"
+      ],
+      "graduationDate": "2023",
+      "children": [
+        {
+          "name": "Emma",
+          "interests": [
+            "Art"
+          ],
+          "majors": [
+            "Fine Arts"
+          ],
+          "graduationDate": "2024"
+        },
+        {
+          "name": "Ryan",
+          "interests": [
+            "Business"
+          ],
+          "majors": [
+            "Business Administration"
+          ],
+          "graduationDate": "2024",
+          "children": [
+            {
+              "name": "Alice",
+              "interests": [
+                "Computer Science"
+              ],
+              "majors": [
+                "Computer Science"
+              ],
+              "graduationDate": "2025",
+              "children": [
+                {
+                  "name": "Bob",
+                  "interests": [
+                    "Engineering"
+                  ],
+                  "majors": [
+                    "Mechanical Engineering"
+                  ],
+                  "graduationDate": "2026",
+                  "children": [
+                    {
+                      "name": "Charlie",
+                      "interests": [
+                        "Design"
+                      ],
+                      "majors": [
+                        "Graphic Design"
+                      ],
+                      "graduationDate": "2027",
+                      "children": [
+                        {
+                          "name": "Daniel",
+                          "interests": [
+                            "Science",
+                            "Technology"
+                          ],
+                          "majors": [
+                            "Physics"
+                          ],
+                          "graduationDate": "2028",
+                          "children": [
+                            {
+                              "name": "Kayla",
+                              "interests": [
+                                "Art",
+                                "Photography"
+                              ],
+                              "majors": [
+                                "Fine Arts"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "John",
+                              "interests": [
+                                "Writing",
+                                "Literature"
+                              ],
+                              "majors": [
+                                "English"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Roberto",
+                              "interests": [
+                                "History",
+                                "Politics"
+                              ],
+                              "majors": [
+                                "Political Science"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Bailey",
+                              "interests": [
+                                "Mathematics"
+                              ],
+                              "majors": [
+                                "Mathematics"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Issac",
+                              "interests": [
+                                "Business"
+                              ],
+                              "majors": [
+                                "Business Administration"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Kayla",
+                              "interests": [
+                                "Art",
+                                "Photography"
+                              ],
+                              "majors": [
+                                "Fine Arts"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "John",
+                              "interests": [
+                                "Writing",
+                                "Literature"
+                              ],
+                              "majors": [
+                                "English"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Roberto",
+                              "interests": [
+                                "History",
+                                "Politics"
+                              ],
+                              "majors": [
+                                "Political Science"
+                              ],
+                              "graduationDate": "2029"
+                            },
+                            {
+                              "name": "Bailey",
+                              "interests": [
+                                "Mathematics"
+                              ],
+                              "majors": [
+                                "Mathematics"
+                              ],
+                              "graduationDate": "2029"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
