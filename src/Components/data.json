@@ -19,26 +19,41 @@
                   "name": "",
                   "children": [
                     {
-                      "name": "Jennifer Lam",
+                      "name": "",
                       "children": [
                         {
                           "name": "",
                           "children": [
                             {
-                              "name": "Zerlinda Lee",
-                              "lineName": "Angel Line",
-                              "seasonDebut": "Spring '22",
+                              "name": "",
                               "children": [
                                 {
-                                  "name": "",
+                                  "name": "Jennifer Lam",
                                   "children": [
                                     {
-                                      "name": "Eric Ly",
-                                      "seasonDebut": "Spring '23"
-                                    },
-                                    {
-                                      "name": "Casey Tu",
-                                      "seasonDebut": "Spring '23"
+                                      "name": "",
+                                      "children": [
+                                        {
+                                          "name": "Zerlinda Lee",
+                                          "lineName": "Angel Line",
+                                          "seasonDebut": "Spring '22",
+                                          "children": [
+                                            {
+                                              "name": "",
+                                              "children": [
+                                                {
+                                                  "name": "Eric Ly",
+                                                  "seasonDebut": "Spring '23"
+                                                },
+                                                {
+                                                  "name": "Casey Tu",
+                                                  "seasonDebut": "Spring '23"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -76,90 +91,143 @@
               "name": "Yenni Pham",
               "children": [
                 {
-                  "name": "Rita Nguyen",
-                  "lineName": "Burrito Line",
+                  "name": "",
                   "children": [
                     {
-                      "name": "",
+                      "name": "Rita Nguyen",
+                      "lineName": "Burrito Line",
                       "children": [
-                        {
-                          "name": "Leyna Nguyen",
-                          "seasonDebut": "Fall '21"
-                        },
-                        {
-                          "name": "Hivien Hong",
-                          "seasonDebut": "Fall '21"
-                        },
                         {
                           "name": "",
                           "children": [
                             {
-                              "name": "Ivy Phan",
-                              "seasonDebut": "Spring '22"
-                            },
-                            {
                               "name": "",
                               "children": [
                                 {
-                                  "name": "Andrew Le",
-                                  "seasonDebut": "Fall '22"
-                                },
-                                {
-                                  "name": "Nolan Le",
-                                  "seasonDebut": "Fall '22"
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "name": "Leyna Nguyen",
+                                      "seasonDebut": "Fall '21"
+                                    },
+                                    {
+                                      "name": "Hivien Hong",
+                                      "seasonDebut": "Fall '21"
+                                    },
+                                    {
+                                      "name": "",
+                                      "children": [
+                                        {
+                                          "name": "Ivy Phan",
+                                          "seasonDebut": "Spring '22"
+                                        },
+                                        {
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "name": "Andrew Le",
+                                              "seasonDebut": "Fall '22"
+                                            },
+                                            {
+                                              "name": "Nolan Le",
+                                              "seasonDebut": "Fall '22"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
                             }
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "name": "",
-                  "children": [
+                    },
                     {
                       "name": "",
                       "children": [
                         {
-                          "name": "Sydney Lee"
-                        },
+                          "name": "Bryant Nguyen"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "",
+                      "children": [
                         {
-                          "name": "Jedrek",
-                          "lineName": "Mosh Pit",
+                          "name": "",
                           "children": [
                             {
                               "name": "",
                               "children": [
                                 {
-                                  "name": "Matthew Dzoan"
-                                },
-                                {
-                                  "name": "Cindy Mai"
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "name": "Sydney Lee"
+                                    },
+                                    {
+                                      "name": "Jedrek",
+                                      "lineName": "Mosh Pit",
+                                      "children": [
+                                        {
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "name": "Matthew Dzoan"
+                                            },
+                                            {
+                                              "name": "Cindy Mai"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
                             }
                           ]
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "name": "",
+                      "children": [
                         {
                           "name": "",
                           "children": [
                             {
-                              "name": "David Lu",
-                              "lineName": "Poké Line",
+                              "name": "",
                               "children": [
-                                {
-                                  "name": "Pharell Le"
-                                },
                                 {
                                   "name": "",
                                   "children": [
                                     {
-                                      "name": "Hayden Doan"
-                                    },
-                                    {
-                                      "name": "Sean Le"
+                                      "name": "",
+                                      "children": [
+                                        {
+                                          "name": "David Lu",
+                                          "lineName": "Poké Line",
+                                          "children": [
+                                            {
+                                              "name": "Pharell Le"
+                                            },
+                                            {
+                                              "name": "",
+                                              "children": [
+                                                {
+                                                  "name": "Hayden Doan"
+                                                },
+                                                {
+                                                  "name": "Sean Le"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
