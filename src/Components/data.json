@@ -115,6 +115,61 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "Sydney Lee"
+                        },
+                        {
+                          "name": "Jedrek",
+                          "lineName": "Mosh Pit",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "Matthew Dzoan"
+                                },
+                                {
+                                  "name": "Cindy Mai"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "David Lu",
+                              "lineName": "Poké Line",
+                              "children": [
+                                {
+                                  "name": "Pharell Le"
+                                },
+                                {
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "name": "Hayden Doan"
+                                    },
+                                    {
+                                      "name": "Sean Le"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
