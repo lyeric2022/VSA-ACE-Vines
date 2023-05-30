@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background: linear-gradient(0deg, rgb(67, 13, 40), rgb(71, 48, 17)) no-repeat;
   }
   
   .node {
@@ -18,10 +18,11 @@ body {
   }
 
   .subtext {
-    font-size: 14px;
+    font-size: 26px;
     fill: #fff;
     text-anchor: middle;
     dominant-baseline: middle;
+    z-index: 10px;
     /* background-color: red; */
   }
   
