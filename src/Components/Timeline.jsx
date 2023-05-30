@@ -13,6 +13,8 @@ const Timeline = () => {
     { season: 'Spring', year: 2020 },
     { season: 'Fall', year: 2019 },
     { season: 'Spring', year: 2019 },
+    { season: 'Fall', year: 2018 },
+    { season: 'Spring', year: 2018 },
   ];
 
   return (
