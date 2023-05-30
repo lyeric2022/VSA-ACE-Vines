@@ -376,27 +376,6 @@
                                 "English"
                               ],
                               "graduationDate": "2029"
-                            },
-                            {
-                              "name": "Roberto",
-                              "interests": [
-                                "History",
-                                "Politics"
-                              ],
-                              "majors": [
-                                "Political Science"
-                              ],
-                              "graduationDate": "2029"
-                            },
-                            {
-                              "name": "Bailey",
-                              "interests": [
-                                "Mathematics"
-                              ],
-                              "majors": [
-                                "Mathematics"
-                              ],
-                              "graduationDate": "2029"
                             }
                           ]
                         }

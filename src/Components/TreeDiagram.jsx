@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import './TreeDiagram.css';
 
+import { getRandomNumber } from './RandomNumber';
+
+let currentNum = 1;
+
 // A magical component that brings trees to life
 const TreeDiagram = ({ numTrees, depth, data }) => {
   let svgWidth = (1 * window.innerWidth) / 1; // Measuring the width of the window to accommodate the grandness of the trees
@@ -70,15 +74,18 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
         return d.data.name; // The names of the trees, spoken with reverence
       });
 
+    currentNum = getRandomNumber(currentNum);
+
     node
       .append('text')
       .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
       .attr('class', 'subtext')
       .attr('x', 0)
-      .attr('y', (d) => (d.data.children ? 22 : 0)) // Adjust the vertical position as per your requirement
+      .attr('y', (d) => (d.data.children ? 23 : 0)) // Adjust the vertical position as per your requirement
       .text((d) => {
-        // Add the desired additional text here
-        return d.data.majors;
+        if (d.data.children) {
+          return d.data.majors;
+        }
       });
   }, [selectedNode]);
 
@@ -89,7 +96,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
 
-    svgWidth *= 0.99; // Shrinking the trees just a little, to fit within the mortal realm
+    svgWidth *= 0.96; // Shrinking the trees just a little, to fit within the mortal realm
 
     if (svgRef.current) {
       svgRef.current.style.width = `${svgWidth}px`; // Modifying the width of the sacred SVG container
