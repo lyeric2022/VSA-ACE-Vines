@@ -82,7 +82,7 @@
     },
     {
       "name": "Marvin Pham",
-      "lineName": "Oldies",
+      "lineName": "Original Oldies",
       "children": [
         {
           "name": "",
@@ -150,12 +150,7 @@
                       "children": [
                         {
                           "name": "Bryant Nguyen"
-                        }
-                      ]
-                    },
-                    {
-                      "name": "",
-                      "children": [
+                        },
                         {
                           "name": "",
                           "children": [
@@ -184,29 +179,10 @@
                                           ]
                                         }
                                       ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "name": "",
-                      "children": [
-                        {
-                          "name": "",
-                          "children": [
-                            {
-                              "name": "",
-                              "children": [
-                                {
-                                  "name": "",
-                                  "children": [
+                                    },
                                     {
                                       "name": "",
+
                                       "children": [
                                         {
                                           "name": "David Lu",
