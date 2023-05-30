@@ -69,7 +69,20 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
         }
         return d.data.name; // The names of the trees, spoken with reverence
       });
+
+    node
+      .append('text')
+      .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
+      .attr('class', 'subtext')
+      .attr('x', 0)
+      .attr('y', (d) => (d.data.children ? 22 : 0)) // Adjust the vertical position as per your requirement
+      .text((d) => {
+        // Add the desired additional text here
+        return d.data.majors;
+      });
   }, [selectedNode]);
+
+
 
   // A mystical ceremony to adjust the size of the trees based on the window's dimensions
   useEffect(() => {
