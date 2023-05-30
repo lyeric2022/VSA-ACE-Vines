@@ -1,12 +1,16 @@
 import React from 'react';
+import './Timeline.css'
 
 const Timeline = () => {
   // Define the timeline data
   const timelineData = [
-    { season: 'Fall', year: 2021 },
-    { season: 'Spring', year: 2022 },
-    { season: 'Fall', year: 2022 },
     { season: 'Spring', year: 2023 },
+    { season: 'Fall', year: 2022 },
+    { season: 'Spring', year: 2022 },
+    { season: 'Fall', year: 2021 },
+    { season: 'Spring', year: 2021 },
+    { season: 'Fall', year: 2020 },
+    { season: 'Spring', year: 2020 },
   ];
 
   return (

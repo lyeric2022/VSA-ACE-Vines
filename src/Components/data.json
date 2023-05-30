@@ -1,6 +1,6 @@
 {
-  "name": " ",
-  "lineName": "CSUF VSA",
+  "name": "",
+  "titleName": "CSUF VSA",
   "children": [
     {
       "name": "ABG"
@@ -16,26 +16,31 @@
               "name": "",
               "children": [
                 {
-                  "name": "Jennifer Lam",
+                  "name": "",
                   "children": [
                     {
-                      "name": "",
+                      "name": "Jennifer Lam",
                       "children": [
                         {
-                          "name": "Zerlinda Lee",
-                          "lineName": "Angel Line",
-                          "seasonDebut": "Spring '22",
+                          "name": "",
                           "children": [
                             {
-                              "name": "",
+                              "name": "Zerlinda Lee",
+                              "lineName": "Angel Line",
+                              "seasonDebut": "Spring '22",
                               "children": [
                                 {
-                                  "name": "Eric Ly",
-                                  "seasonDebut": "Spring '23"
-                                },
-                                {
-                                  "name": "Casey Tu",
-                                  "seasonDebut": "Spring '23"
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "name": "Eric Ly",
+                                      "seasonDebut": "Spring '23"
+                                    },
+                                    {
+                                      "name": "Casey Tu",
+                                      "seasonDebut": "Spring '23"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -61,7 +66,8 @@
       "name": "Cactus Fam"
     },
     {
-      "name": "Oldies",
+      "name": "",
+      "lineName": "Oldies",
       "children": [
         {
           "name": "Marvin Pham",

@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    width: 98.4vw;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#timeline, #treeDiagram {
+    grid-row: 1 / 2;
+}
+
+#timeline {
+    /* background-color: aqua; */
+    grid-column: 1 / 4;
+}
+
+#treeDiagram {
+    /* background-color:crimson; */
+    grid-column: 11 / 1;
+}
+
+/* #vsa-root-name {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 11;
+
+} */

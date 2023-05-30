@@ -1,0 +1,13 @@
+.timeline-content {
+    color: white;
+    border-bottom: 1px transparent lightblue; 
+    /* border-bottom: 1px solid lightblue;  */
+    line-height: 0.1em;
+    margin:47px 0px 0px 15px;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.timeline-item {
+    height: 75.5px;
+}

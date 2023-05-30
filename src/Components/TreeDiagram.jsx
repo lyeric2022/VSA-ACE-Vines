@@ -8,7 +8,11 @@ let currentNum = 1;
 
 // A magical component that brings trees to life
 const TreeDiagram = ({ numTrees, depth, data }) => {
-  let svgWidth = (1 * window.innerWidth) / 1.01; // Measuring the width of the window to accommodate the grandness of the trees
+  let svgWidth = (1 * window.innerWidth) * 0.984; // Measuring the width of the window to accommodate the grandness of the trees
+
+  if (svgWidth <= 1000) {
+    svgWidth = 1511.424;
+  }
 
   let svgHeight;
 
@@ -83,13 +87,24 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     node
       .append('text')
       .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
-
       .attr('class', 'subtext')
       .attr('x', 0)
       .attr('y', (d) => (d.data.children ? -90 : 0)) // Adjust the vertical position as per your requirement
       .text((d) => {
         if (d.data.hasOwnProperty('lineName')) {
           return d.data.lineName;
+        }
+      });
+
+      node
+      .append('text')
+      .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
+      .attr('class', 'titleText')
+      .attr('x', 0)
+      .attr('y', (d) => (d.data.children ? -5 : 0)) // Adjust the vertical position as per your requirement
+      .text((d) => {
+        if (d.data.hasOwnProperty('titleName')) {
+          return d.data.titleName;
         }
       });
 
@@ -102,7 +117,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
 
-    svgWidth *= 0.99; // Shrinking the trees just a little, to fit within the mortal realm
+    svgWidth *= 1.0; // Shrinking the trees just a little, to fit within the mortal realm
 
     if (svgRef.current) {
       svgRef.current.style.width = `${svgWidth}px`; // Modifying the width of the sacred SVG container
