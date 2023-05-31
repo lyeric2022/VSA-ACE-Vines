@@ -1,10 +1,10 @@
 .timeline-content {
-    color: white;
+    color: lightsalmon;
     border-bottom: 1px transparent lightblue; 
     /* border-bottom: 1px solid lightblue;  */
     line-height: 0.1em;
     margin:47px 0px 0px 5px;
-    font-size: 13px;
+    font-size: 14px;
     flex-direction: column;
 }
 

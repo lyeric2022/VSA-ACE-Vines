@@ -31,6 +31,9 @@
                                   "name": "Jennifer Lam",
                                   "children": [
                                     {
+                                      "name": ""
+                                    },
+                                    {
                                       "name": "",
                                       "children": [
                                         {
@@ -96,11 +99,26 @@
                               "name": "",
                               "children": [
                                 {
-                                  "name": "",
+                                  "name": "{black hole}",
                                   "children": [
                                     {
-                                      "name": "",
+                                      "name": "Thomas Pham",
+                                      "lineName": "Chrysanthemum Line",
                                       "children": [
+                                        {
+                                          "name": "Kourtney",
+                                          "children": [
+                                            {
+                                              "name": "",
+                                              "children": [
+                                                {
+                                                  "name": "Sandra Thach",
+                                                  "fullName": "Sandra Thach"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
                                         {
                                           "name": "",
                                           "children": [
@@ -112,11 +130,6 @@
                                                   "name": "Lucine Tieu"
                                                 }
                                               ]
-                                            },
-                                            {
-                                              "name": "Sandra T.",
-                                              "fullName": "Sandra Thach"
-
                                             }
                                           ]
                                         }
@@ -133,7 +146,12 @@
                                           "name": "",
                                           "children": [
                                             {
-                                              "name": "Andy Nguyen"
+                                              "name": "Cyrus B.",
+                                              "fullName": "Cyrus Baybay"
+                                            },
+                                            {
+                                              "name": "Winette N.",
+                                              "fullName": "Winette +Nguyen"
                                             },
                                             {
                                               "name": "",
@@ -142,17 +160,40 @@
                                                   "name": "Mike Bui"
                                                 },
                                                 {
-                                                  "name": "Joann Lee"
+                                                  "name": "Joann L.",
+                                                  "fullName": "Joann Lee"
+
                                                 }
                                               ]
                                             },
                                             {
-                                              "name": "Cyrus B.",
-                                              "fullName": "Cyrus Baybay"
+                                              "name": "Andy Nguyen"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "",
+                                      "children": [
+                                        {
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "name": "Brandon Lim"
                                             },
                                             {
-                                              "name": "Winette N.",
-                                              "fullName": "Winette +Nguyen"
+                                              "name": "",
+                                              "lineName": ""
+                                            },
+                                            {
+                                              "name": "Ryan Chen",
+                                              "lineName": "Sigma Line",
+                                              "children": [
+                                                {
+                                                  "name": "Victor Dao"
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
@@ -225,11 +266,13 @@
                                           "name": "",
                                           "children": [
                                             {
-                                              "name": "Andrew Le",
+                                              "name": "Andrew L.",
+                                              "fullName": "Andrew Le",
                                               "seasonDebut": "Fall '22"
                                             },
                                             {
-                                              "name": "Nolan Le",
+                                              "name": "Nolan L.",
+                                              "fullName": "Nolan Le",
                                               "seasonDebut": "Fall '22"
                                             }
                                           ]
@@ -293,19 +336,21 @@
                                       ]
                                     },
                                     {
-                                      "name": "Jedrek",
+                                      "name": "Jedrek Tran",
                                       "lineName": "Mosh Pit",
                                       "children": [
                                         {
                                           "name": "",
                                           "children": [
                                             {
-                                              "name": "Matthew D.",
+                                              "name": "Matt D.",
                                               "fullName": "Matthew Dzoan"
 
                                             },
                                             {
-                                              "name": "Cindy Mai"
+                                              "name": "Cindy M.",
+                                              "fullName": "Cindy Mai"
+
                                             }
                                           ]
                                         }

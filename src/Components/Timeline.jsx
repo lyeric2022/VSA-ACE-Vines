@@ -22,7 +22,7 @@ const Timeline = () => {
       {timelineData.map((item, index) => (
         <div key={index} className="timeline-item">
           <div className="timeline-content">
-            <h3>{item.season} {item.year}</h3>
+            <p>{item.season} {item.year}</p>
           </div>
         </div>
       ))}

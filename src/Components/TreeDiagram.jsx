@@ -13,7 +13,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
   if (svgWidth <= 1000) {
     svgWidth = 1511.424;
   }
-  
+
 
   let svgHeight;
 
@@ -39,13 +39,14 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     const g = svg.append('g').attr('transform', `translate(0,${height - 50})`); // The secret meeting place of the tree society
 
     const link = g
-      .selectAll('.link')
-      .data(treeData.links())
-      .enter()
-      .append('path')
-      .attr('class', 'link')
-      .attr('d', d3.linkVertical().x((d) => d.x || 0).y((d) => -d.y || 0)); // The interconnected paths of the tree, like a web of life
-
+    .selectAll('.link')
+    .data(treeData.links())
+    .enter()
+    .append('path')
+    .attr('class', 'link')
+    .attr('d', d3.linkVertical().x((d) => d.x || 0).y((d) => -d.y || 0)) // The interconnected paths of the tree, like a web of life
+    .style('visibility', (d) => (d.target.data.lineName === '' ? 'hidden' : 'visible'));
+  
     const node = g
       .selectAll('.node')
       .data(treeData.descendants())
@@ -66,17 +67,12 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
       .attr('dy', '0.32em')
       .attr('class', 'text')
       .attr('x', 0)
-      // .attr('y', (d) => (d.data.children ? 17 : -23))
-      .attr('y', (d) => -28)
+      .attr('y', (d) => -25)
+      .style('font-size', (d) => (d.data.children ? '16px' : '12px'))
       .text((d) => {
-        // if (d.data.hasOwnProperty('seasonDebut')) {
-        //   return `${d.data.name} - ${d.data.seasonDebut}`; // The names of the trees, spoken with reverence
-        // }
-        // else {
-          return `${d.data.name}`; // The names of the trees, spoken with reverence
-
-        // }
+        return `${d.data.name}`;
       });
+
 
     currentNum = getRandomNumber(currentNum);
 
@@ -96,7 +92,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
         }
       });
 
-      node
+    node
       .append('text')
       .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
       .attr('class', 'titleText')
@@ -124,7 +120,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     }
 
     if (svgRef.current) {
-      
+
       svgRef.current.style.height = `${svgHeight}px`; // Adjusting the height of the holy SVG container
     }
   }, []);
@@ -142,6 +138,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
         // backgroundSize: 'cover', // Adjust the background image size
       }}
     ></svg>
-  );};
+  );
+};
 
 export default TreeDiagram;
