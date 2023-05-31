@@ -78,7 +78,8 @@
       "name": "Ham An"
     },
     {
-      "name": "Cactus Fam",
+      "name": "",
+      "lineName": "Cactus Fam",
       "children": [
         {
           "name": "",
@@ -99,10 +100,11 @@
                               "name": "",
                               "children": [
                                 {
-                                  "name": "{black hole}",
+                                  "name": "",
+                                  "lineName": "{void}",
                                   "children": [
                                     {
-                                      "name": "Thomas Pham",
+                                      "name": "Nicholas Pham",
                                       "lineName": "Chrysanthemum Line",
                                       "children": [
                                         {
@@ -122,6 +124,13 @@
                                         {
                                           "name": "",
                                           "children": [
+                                            {
+                                              "name": "Nicholas Pham"
+                                            },
+                                            {
+                                              "name": "",
+                                              "lineName": ""
+                                            },
                                             {
                                               "name": "Alex Lu",
                                               "lineName": "Hene Hoes Line",
@@ -177,7 +186,8 @@
                                       "name": "",
                                       "children": [
                                         {
-                                          "name": "",
+                                          "name": "Ryan Kan",
+                                          "lineName": "Tea Line",
                                           "children": [
                                             {
                                               "name": "Brandon Lim"

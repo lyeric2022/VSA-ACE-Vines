@@ -68,7 +68,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
       .attr('class', 'text')
       .attr('x', 0)
       .attr('y', (d) => -25)
-      .style('font-size', (d) => (d.data.children ? '16px' : '12px'))
+      .style('font-size', (d) => (d.data.children ? '16px' : '11px'))
       .text((d) => {
         return `${d.data.name}`;
       });
