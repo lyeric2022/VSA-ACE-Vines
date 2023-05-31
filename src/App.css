@@ -38,5 +38,12 @@
 #blackSpace {
     min-height: 500px;
       background: rgb(65, 13, 40) no-repeat;
+}
 
+.credits {
+    color:aliceblue;
+    letter-spacing: 2px; /* Increase or decrease the value as desired */
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
 }

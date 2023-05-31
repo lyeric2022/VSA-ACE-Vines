@@ -6,6 +6,9 @@
       "name": "ABG"
     },
     {
+      "name": "Pepper Line"
+    },
+    {
       "name": "",
       "lineName": "Doan Dynasty",
       "children": [
@@ -28,10 +31,11 @@
                               "name": "",
                               "children": [
                                 {
-                                  "name": "Jennifer Lam",
+                                  "name": "",
+                                  "lineName": "{void}",
                                   "children": [
                                     {
-                                      "name": ""
+                                      "name": "Vincent Ho"
                                     },
                                     {
                                       "name": "",
@@ -57,6 +61,9 @@
                                           ]
                                         }
                                       ]
+                                    },
+                                    {
+                                      "name": "Jimmy Nguyen"
                                     }
                                   ]
                                 }
@@ -76,6 +83,9 @@
     },
     {
       "name": "Ham An"
+    },
+    {
+      "name": "Spice Fam"
     },
     {
       "name": "",
@@ -108,8 +118,19 @@
                                       "lineName": "Chrysanthemum Line",
                                       "children": [
                                         {
-                                          "name": "Kourtney",
+                                          "name": "Kourtney"
+                                        },
+                                        {
+                                          "name": "",
                                           "children": [
+                                            {
+                                              "name": "Nicholas Pham",
+                                              "children": [
+                                                {
+                                                  "name": "Eduoard Phan"
+                                                }
+                                              ]
+                                            },
                                             {
                                               "name": "",
                                               "children": [
@@ -118,18 +139,6 @@
                                                   "fullName": "Sandra Thach"
                                                 }
                                               ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "name": "",
-                                          "children": [
-                                            {
-                                              "name": "Nicholas Pham"
-                                            },
-                                            {
-                                              "name": "",
-                                              "lineName": ""
                                             },
                                             {
                                               "name": "Alex Lu",
@@ -171,7 +180,6 @@
                                                 {
                                                   "name": "Joann L.",
                                                   "fullName": "Joann Lee"
-
                                                 }
                                               ]
                                             },
@@ -227,12 +235,6 @@
     },
     {
       "name": "Kawaii Casino"
-    },
-    {
-      "name": "Pepper Line"
-    },
-    {
-      "name": "Spice Fam"
     },
     {
       "name": "Marvin Pham",
@@ -355,12 +357,10 @@
                                             {
                                               "name": "Matt D.",
                                               "fullName": "Matthew Dzoan"
-
                                             },
                                             {
                                               "name": "Cindy M.",
                                               "fullName": "Cindy Mai"
-
                                             }
                                           ]
                                         }

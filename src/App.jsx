@@ -18,9 +18,9 @@ function App() {
       <div className="container">
         <div id="treeDiagram"><TreeDiagram numTrees={numTrees} data={data} depth={depth}></TreeDiagram></div>
         <div id="timeline"><Timeline></Timeline></div>
-        {/* <div id="blackSpace"></div> */}
         {/* <div id="vsa-root-name">CSUF VSA</div> */}
       </div>
+      <div class="credits">Contributors: Eric Ly, Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, and Vincent Ho</div>
     </>
   )
 }
