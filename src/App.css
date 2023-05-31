@@ -16,13 +16,14 @@
     /* background-color: aqua; */
     /* grid-column: 1 / 4; */
     grid-column: 11 / 1;
+    /* height: auto; */
 
 }
 
 #treeDiagram {
     /* background-color:crimson; */
     /* grid-column: 11 / 1; */
-    grid-column: 1 / 4;
+    grid-column: 1 / 11;
 
 }
 
@@ -33,3 +34,9 @@
     grid-column: 1 / 11;
 
 } */
+
+#blackSpace {
+    min-height: 500px;
+      background: rgb(65, 13, 40) no-repeat;
+
+}

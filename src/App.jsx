@@ -18,7 +18,7 @@ function App() {
       <div className="container">
         <div id="treeDiagram"><TreeDiagram numTrees={numTrees} data={data} depth={depth}></TreeDiagram></div>
         <div id="timeline"><Timeline></Timeline></div>
-
+        {/* <div id="blackSpace"></div> */}
         {/* <div id="vsa-root-name">CSUF VSA</div> */}
       </div>
     </>

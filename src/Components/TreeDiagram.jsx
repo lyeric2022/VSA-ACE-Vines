@@ -13,6 +13,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
   if (svgWidth <= 1000) {
     svgWidth = 1511.424;
   }
+  
 
   let svgHeight;
 
@@ -124,7 +125,8 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     }
 
     if (svgRef.current) {
-      svgRef.current.style.height = `${svgHeight}px`; // Adjusting the height of the holy SVG container
+      
+      svgRef.current.style.height = `${svgHeight * 1}px`; // Adjusting the height of the holy SVG container
     }
   }, []);
 
