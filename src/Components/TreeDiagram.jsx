@@ -128,7 +128,19 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     }
   }, []);
 
-  return <svg ref={svgRef} width={svgWidth} height={120 * depth}></svg>; // The gateway to the world of trees, where their beauty unfolds
-};
+  return (
+    <svg
+      ref={svgRef}
+      width={svgWidth}
+      height={120 * depth}
+      style={{
+        // background: 'url(path/to/your/image.jpg)', // Set the background image path
+        // background: 'linear-gradient(0deg, rgb(65, 13, 40), rgb(99, 67, 24)) no-repeat',
+        // zIndex: -1,
+
+        // backgroundSize: 'cover', // Adjust the background image size
+      }}
+    ></svg>
+  );};
 
 export default TreeDiagram;

@@ -1,21 +1,29 @@
+
+
 .container {
     display: grid;
     width: 98.4vw;
     grid-template-columns: repeat(10, 1fr);
+    /* background: linear-gradient(0deg, rgb(65, 13, 40), rgb(99, 67, 24)) no-repeat; */
+
 }
 
-#timeline, #treeDiagram {
+#treeDiagram, #timeline {
     grid-row: 1 / 2;
 }
 
 #timeline {
     /* background-color: aqua; */
-    grid-column: 1 / 4;
+    /* grid-column: 1 / 4; */
+    grid-column: 11 / 1;
+
 }
 
 #treeDiagram {
     /* background-color:crimson; */
-    grid-column: 11 / 1;
+    /* grid-column: 11 / 1; */
+    grid-column: 1 / 4;
+
 }
 
 /* #vsa-root-name {
