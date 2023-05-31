@@ -126,7 +126,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
 
     if (svgRef.current) {
       
-      svgRef.current.style.height = `${svgHeight * 1}px`; // Adjusting the height of the holy SVG container
+      svgRef.current.style.height = `${svgHeight}px`; // Adjusting the height of the holy SVG container
     }
   }, []);
 
@@ -134,7 +134,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     <svg
       ref={svgRef}
       width={svgWidth}
-      height={120 * depth}
+      height={120 * depth * 1.25}
       style={{
         // background: 'url(path/to/your/image.jpg)', // Set the background image path
         background: 'linear-gradient(0deg, rgb(65, 13, 40), rgb(99, 67, 24)) no-repeat',
