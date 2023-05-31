@@ -20,7 +20,7 @@ function App() {
         <div id="timeline"><Timeline></Timeline></div>
         {/* <div id="vsa-root-name">CSUF VSA</div> */}
       </div>
-      <div class="credits">Contributors: Eric Ly, Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, and Vincent Ho</div>
+      <div class="credits">Made by Eric Ly ◕ ‿ ◕... with help from Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, Vincent Ho, and Isabella Vuong.</div>
     </>
   )
 }

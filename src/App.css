@@ -42,8 +42,9 @@
 
 .credits {
     color:aliceblue;
-    letter-spacing: 2px; /* Increase or decrease the value as desired */
+    letter-spacing: 1px; /* Increase or decrease the value as desired */
     min-height: 100px;
     display: flex;
     align-items: flex-end;
+    margin: 0 0 15px 10px;
 }
