@@ -68,7 +68,6 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
       .attr('x', 0)
       // .attr('y', (d) => (d.data.children ? 17 : -23))
       .attr('y', (d) => -28)
-
       .text((d) => {
         // if (d.data.hasOwnProperty('seasonDebut')) {
         //   return `${d.data.name} - ${d.data.seasonDebut}`; // The names of the trees, spoken with reverence
