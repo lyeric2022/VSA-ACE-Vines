@@ -10,9 +10,9 @@ let currentNum = 1;
 const TreeDiagram = ({ numTrees, depth, data }) => {
   let svgWidth = (1 * window.innerWidth) * 0.984; // Measuring the width of the window to accommodate the grandness of the trees
 
-  if (svgWidth <= 1000) {
-    svgWidth = 1511.424;
-  }
+  // if (svgWidth <= 1000) {
+  //   svgWidth = 1511.424;
+  // }
 
 
   let svgHeight;
