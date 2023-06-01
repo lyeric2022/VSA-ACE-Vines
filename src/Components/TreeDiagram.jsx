@@ -7,12 +7,12 @@ import { getRandomNumber } from './RandomNumber';
 let currentNum = 1;
 
 // A magical component that brings trees to life
-const TreeDiagram = ({ numTrees, depth, data }) => {
+const TreeDiagram = ({ numTrees, depth, data, minimumWidth }) => {
   let svgWidth = (1 * window.innerWidth) * 0.984; // Measuring the width of the window to accommodate the grandness of the trees
 
-  // if (svgWidth <= 1000) {
-  //   svgWidth = 1511.424;
-  // }
+  if (window.innerWidth <= minimumWidth) {
+    svgWidth = minimumWidth * 0.984;
+  }
 
 
   let svgHeight;

@@ -9,11 +9,11 @@ import './App.css';
 function App() {
   const numTrees = 4;
   const depth = calculateJsonDepth(data);
+  let screenWidth;
 
   useEffect(() => {
     function handleResize() {
       const screenWidth = window.innerWidth;
-      console.log(screenWidth);
       if (screenWidth < 1000) {
         document.body.style.width = '1500px';
       } else {
@@ -31,9 +31,9 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ width: screenWidth }}>
         <div id="treeDiagram">
-          <TreeDiagram numTrees={numTrees} data={data} depth={depth} />
+          <TreeDiagram numTrees={numTrees} data={data} depth={depth} minimumWidth={screenWidth} />
         </div>
         <div id="timeline">
           <Timeline />
