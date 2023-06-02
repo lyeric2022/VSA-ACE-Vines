@@ -32,9 +32,12 @@ function App() {
 
   return (
     <>
+      <div className="title" style={{ width: 1500 }}>
+        ANH CHỊ EM Vines🌿Visualizer for VSA, at California State University, Fullerton
+      </div>
       <div className="container" style={{ width: 1500 }}>
         <div id="treeDiagram">
-          <TreeDiagram numTrees={numTrees} data={data} depth={depth}  />
+          <TreeDiagram numTrees={numTrees} data={data} depth={depth} />
         </div>
         <div id="timeline">
           <Timeline />

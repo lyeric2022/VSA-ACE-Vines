@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import './TreeDiagram.css';
 
-import { getRandomNumber } from './RandomNumber';
-
-let currentNum = 1;
+let firstNodeChecked = false;
 
 // A magical component that brings trees to life
-const TreeDiagram = ({ numTrees, depth, data }) => {
+const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
+  const doanDynastyData = data.children.find((child) => child.lineName === "Doan Dynasty");
+  const cactusFamData = data.children.find((child) => child.lineName === "Cactus Fam");
+
   let svgWidth = (1 * window.innerWidth) * 0.984;;
   
   if (window.innerWidth < 1000) {
@@ -23,8 +24,6 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
 
   const svgRef = useRef(null);
 
-  const [selectedNode, setSelectedNode] = useState(null); // The chosen one, the node that captures our hearts
-
   // The ancient ritual of rendering the tree diagram
   useEffect(() => {
     const svg = d3.select(svgRef.current); // Entering the mystical realm of SVG
@@ -34,11 +33,8 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
     const tree = d3.tree().size([width, height - 100]); // The magic formula to create the perfect tree
 
     const rootNode = d3.hierarchy(data); // The birth of the tree, a glorious moment
+    
     const treeData = tree(rootNode); // The tree takes shape, its branches reaching for the sky
-
-    treeData.descendants().forEach((node) => {
-      node.data.height = (Math.random() * 100) - 50; // Each tree is unique, some reaching higher than others
-    });
 
     const g = svg.append('g').attr('transform', `translate(0,${height - 50})`); // The secret meeting place of the tree society
 
@@ -78,8 +74,6 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
       });
 
 
-    currentNum = getRandomNumber(currentNum);
-
 
 
 
@@ -108,7 +102,7 @@ const TreeDiagram = ({ numTrees, depth, data }) => {
         }
       });
 
-  }, [selectedNode]);
+  });
 
 
 
