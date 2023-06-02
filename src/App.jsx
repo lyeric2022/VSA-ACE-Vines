@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     function handleResize() {
-      const screenWidth = window.innerWidth;
+      screenWidth = window.innerWidth;
       if (screenWidth < 1000) {
         document.body.style.width = '1500px';
       } else {
@@ -26,20 +26,21 @@ function App() {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
+      console.log(screenWidth);
     };
   }, []);
 
   return (
     <>
-      <div className="container" style={{ width: screenWidth }}>
+      <div className="container" style={{ width: 1500 }}>
         <div id="treeDiagram">
-          <TreeDiagram numTrees={numTrees} data={data} depth={depth} minimumWidth={screenWidth} />
+          <TreeDiagram numTrees={numTrees} data={data} depth={depth}  />
         </div>
         <div id="timeline">
           <Timeline />
         </div>
       </div>
-      <div className="credits">
+      <div className="credits" style={{ width: 1500 }}>
         Made by Eric Ly ◕ ‿ ◕... with help from Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, Vincent Ho, and Isabella Vuong.
       </div>
     </>
