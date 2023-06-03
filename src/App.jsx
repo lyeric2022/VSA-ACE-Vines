@@ -6,13 +6,21 @@ import Timeline from './Components/Timeline';
 
 import './App.css';
 
+let musicIsPlaying = false;
+let myMusic = new Audio("src/assets/unlove.mp3");  
+myMusic.volume = 0.1;  
+
+
 function App() {
   const numTrees = 4;
   const depth = calculateJsonDepth(data);
   let screenWidth;
 
+  const transitionSpeed = 1000;
+
   const [timelineVisible, setTimelineVisible] = useState(true);
   const [selectedLine, setSelectedLine] = useState('Button 1');
+  const [showDiagram, setShowDiagram] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -37,7 +45,17 @@ function App() {
   };
 
   const handleLineSelection = (event) => {
-    setSelectedLine(event.target.value);
+    if (!musicIsPlaying) {
+      myMusic.play();
+      musicIsPlaying = true;
+    }
+    setTimeout(() => {
+      setSelectedLine(event.target.value);
+    }, transitionSpeed);
+    setShowDiagram(false); // Hide the diagram initially
+    setTimeout(() => {
+      setShowDiagram(true); // Show the diagram after 1 second
+    }, transitionSpeed);
   };
 
   return (
@@ -50,44 +68,32 @@ function App() {
           {timelineVisible ? 'Hide Timeline' : 'Show Timeline'}
         </button>
         <button
-          className={selectedLine === 'Button 1' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Penis' } })}
+          className={selectedLine === 'All Lines' ? 'selected' : ''}
+          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'All Lines' } }), transitionSpeed)}
         >
-          Button 1
+          All Lines
         </button>
         <button
           className={selectedLine === 'Doan Dynasty' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Doan Dynasty' } })}
+          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Doan Dynasty' } }), transitionSpeed)}
         >
           Doan Dynasty
         </button>
         <button
-          className={selectedLine === 'Button 3' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Button 3' } })}
+          className={selectedLine === 'Cactus Fam' ? 'selected' : ''}
+          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Cactus Fam' } }), transitionSpeed)}
         >
-          Button 3
+          Cactus Fam
         </button>
         <button
-          className={selectedLine === 'Button 4' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Button 4' } })}
+          className={selectedLine === 'Original Oldies' ? 'selected' : ''}
+          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Original Oldies' } }), transitionSpeed)}
         >
-          Button 4
-        </button>
-        <button
-          className={selectedLine === 'Button 5' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Button 5' } })}
-        >
-          Button 5
-        </button>
-        <button
-          className={selectedLine === 'Button 6' ? 'selected' : ''}
-          onClick={() => handleLineSelection({ target: { value: 'Button 6' } })}
-        >
-          Button 6
+          Original Oldies
         </button>
       </div>
       <div className="container" style={{ width: 1500 }}>
-        <div id="treeDiagram">
+        <div id="treeDiagram" style={{ opacity: showDiagram ? 1 : 0, transition: 'opacity 1s' }}>
           <TreeDiagram numTrees={numTrees} data={data} depth={depth} lineName={selectedLine} />
         </div>
         <div id="timeline" style={{ display: timelineVisible ? 'block' : 'none' }}>
@@ -95,8 +101,9 @@ function App() {
         </div>
       </div>
       <div className="credits" style={{ width: 1500 }}>
-        Made by Eric Ly ◕ ‿ ◕... with help from Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, Vincent Ho, and Isabella Vuong.
+        Made by Eric Ly &#123;@lyy.eric&#125; ◕ ‿ ◕... with help from Ryan Chen, Alex Lu, Rita, David Luu, Norman Pham, Vincent Ho, and Isabella Vuong.
       </div>
+      <div id="black-space"></div>
     </>
   );
 }

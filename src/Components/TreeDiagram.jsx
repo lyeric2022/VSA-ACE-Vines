@@ -10,9 +10,13 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
   if (lineName === "Doan Dynasty") {
      data = data.children.find((child) => child.lineName === "Doan Dynasty");
   }
-  const doanDynastyData = data.children.find((child) => child.lineName === "Doan Dynasty");
-  const cactusFamData = data.children.find((child) => child.lineName === "Cactus Fam");
-
+  else if (lineName === "Cactus Fam") {
+    data = data.children.find((child) => child.lineName === "Cactus Fam");
+  }
+  else if (lineName === "Original Oldies") {
+    data = data.children.find((child) => child.lineName === "Original Oldies");
+  }
+  
   console.log(lineName);
 
   let svgWidth = (1 * window.innerWidth) * 0.984;;
@@ -28,6 +32,9 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
   // The ancient ritual of rendering the tree diagram
   useEffect(() => {
     const svg = d3.select(svgRef.current); // Entering the mystical realm of SVG
+
+    svg.selectAll('*').remove(); // Clear the SVG element before redrawing
+
     const width = +svg.attr('width'); // Unlocking the width attribute, a secret dimension
     const height = +svg.attr('height'); // Embracing the height attribute, a hidden world
 
@@ -111,7 +118,8 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
       width={svgWidth}
       height={120 * depth * 1.25}
       style={{
-        background: 'linear-gradient(0deg, rgb(65, 13, 40), rgb(99, 67, 24)) no-repeat',
+        background: 'linear-gradient(0deg, rgb(65, 13, 40), rgb(109, 57, 24)) no-repeat', 
+        //                                                  rgb(143, 95, 32)
       }}
     ></svg>
   );
