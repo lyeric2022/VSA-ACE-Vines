@@ -57,7 +57,17 @@
     letter-spacing: 1px; /* Increase or decrease the value as desired */
     display: flex;
     align-items: flex-end;
-    margin: 15px 0 15px 10px;
+    margin: 15px 0 10px 2px;
     grid-column: 10 / 1;
+}
+
+.adjustable-buttons {
+    display: flex;
+    margin: 0 0 10px 0px;
+}
+
+button {
+    width: 125px;
+    margin: 0 10px 0px 0px;
 
 }

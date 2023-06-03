@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import './TreeDiagram.css';
 
@@ -6,19 +6,20 @@ let firstNodeChecked = false;
 
 // A magical component that brings trees to life
 const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
+
+  if (lineName === "Doan Dynasty") {
+     data = data.children.find((child) => child.lineName === "Doan Dynasty");
+  }
   const doanDynastyData = data.children.find((child) => child.lineName === "Doan Dynasty");
   const cactusFamData = data.children.find((child) => child.lineName === "Cactus Fam");
 
+  console.log(lineName);
+
   let svgWidth = (1 * window.innerWidth) * 0.984;;
-  
+
   if (window.innerWidth < 1000) {
     svgWidth = 1500;
   }
-
-  // if (svgWidth <= 1000) {
-  //   svgWidth = 1511.424;
-  // }
-
 
   let svgHeight;
 
@@ -33,20 +34,20 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
     const tree = d3.tree().size([width, height - 100]); // The magic formula to create the perfect tree
 
     const rootNode = d3.hierarchy(data); // The birth of the tree, a glorious moment
-    
+
     const treeData = tree(rootNode); // The tree takes shape, its branches reaching for the sky
 
     const g = svg.append('g').attr('transform', `translate(0,${height - 50})`); // The secret meeting place of the tree society
 
     const link = g
-    .selectAll('.link')
-    .data(treeData.links())
-    .enter()
-    .append('path')
-    .attr('class', 'link')
-    .attr('d', d3.linkVertical().x((d) => d.x || 0).y((d) => -d.y || 0)) // The interconnected paths of the tree, like a web of life
-    .style('visibility', (d) => (d.target.data.lineName === '' ? 'hidden' : 'visible'));
-  
+      .selectAll('.link')
+      .data(treeData.links())
+      .enter()
+      .append('path')
+      .attr('class', 'link')
+      .attr('d', d3.linkVertical().x((d) => d.x || 0).y((d) => -d.y || 0)) // The interconnected paths of the tree, like a web of life
+      .style('visibility', (d) => (d.target.data.lineName === '' ? 'hidden' : 'visible'));
+
     const node = g
       .selectAll('.node')
       .data(treeData.descendants())
@@ -73,11 +74,6 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
         return `${d.data.name}`;
       });
 
-
-
-
-
-
     node
       .append('text')
       .attr('dy', '1.2em') // Adjust the vertical offset as per your requirement
@@ -101,27 +97,13 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
           return d.data.titleName;
         }
       });
-
-  });
-
-
-
-  // A mystical ceremony to adjust the size of the trees based on the window's dimensions
-  useEffect(() => {
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-
     svgWidth *= 1.0; // Shrinking the trees just a little, to fit within the mortal realm
 
     if (svgRef.current) {
       svgRef.current.style.width = `${svgWidth}px`; // Modifying the width of the sacred SVG container
-    }
-
-    if (svgRef.current) {
-
       svgRef.current.style.height = `${svgHeight}px`; // Adjusting the height of the holy SVG container
     }
-  }, []);
+  });
 
   return (
     <svg
@@ -129,11 +111,7 @@ const TreeDiagram = ({ numTrees, depth, data, lineName }) => {
       width={svgWidth}
       height={120 * depth * 1.25}
       style={{
-        // background: 'url(path/to/your/image.jpg)', // Set the background image path
         background: 'linear-gradient(0deg, rgb(65, 13, 40), rgb(99, 67, 24)) no-repeat',
-        // zIndex: -1,
-
-        // backgroundSize: 'cover', // Adjust the background image size
       }}
     ></svg>
   );
