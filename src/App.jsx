@@ -20,7 +20,7 @@ function App() {
 
   const [timelineVisible, setTimelineVisible] = useState(true);
   const [selectedLine, setSelectedLine] = useState('Button 1');
-  const [showDiagram, setShowDiagram] = useState(false);
+  const [showDiagram, setShowDiagram] = useState(true);
 
   useEffect(() => {
     function handleResize() {
