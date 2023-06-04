@@ -1,7 +1,7 @@
 import React from 'react';
 import './Timeline.css'
 
-const Timeline = () => {
+const Timeline = ({ expander }) => {
   // Define the timeline data
   const timelineData = [
     { season: 'Spring', year: 2023 },
@@ -20,7 +20,11 @@ const Timeline = () => {
   return (
     <div className="timeline">
       {timelineData.map((item, index) => (
-        <div key={index} className="timeline-item">
+        <div
+          key={index}
+          className="timeline-item"
+          style={{ height: `${expander * item.year}px` }}
+        >
           <div className="timeline-content">
             <p>{item.season} {item.year}</p>
           </div>

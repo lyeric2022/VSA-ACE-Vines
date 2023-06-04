@@ -7,8 +7,9 @@ import Timeline from './Components/Timeline';
 import './App.css';
 
 let musicIsPlaying = false;
-let myMusic = new Audio("src/assets/unlove.mp3");  
-myMusic.volume = 0.1;  
+let myMusic = new Audio("src/assets/unlove.mp3");
+let expander = 1;
+myMusic.volume = 0.05;
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   const depth = calculateJsonDepth(data);
   let screenWidth;
 
-  const transitionSpeed = 1000;
+  const transitionSpeed = 750;
 
   const [timelineVisible, setTimelineVisible] = useState(true);
   const [selectedLine, setSelectedLine] = useState('Button 1');
@@ -69,25 +70,25 @@ function App() {
         </button>
         <button
           className={selectedLine === 'All Lines' ? 'selected' : ''}
-          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'All Lines' } }), transitionSpeed)}
+          onClick={() => setTimeout(() => expander = 1, handleLineSelection({ target: { value: 'All Lines' } }), transitionSpeed)}
         >
           All Lines
         </button>
         <button
           className={selectedLine === 'Doan Dynasty' ? 'selected' : ''}
-          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Doan Dynasty' } }), transitionSpeed)}
+          onClick={() => setTimeout(() => expander = 1.1, handleLineSelection({ target: { value: 'Doan Dynasty' } }), transitionSpeed)}
         >
           Doan Dynasty
         </button>
         <button
           className={selectedLine === 'Cactus Fam' ? 'selected' : ''}
-          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Cactus Fam' } }), transitionSpeed)}
+          onClick={() => setTimeout(() => expander = 1.1, handleLineSelection({ target: { value: 'Cactus Fam' } }), transitionSpeed)}
         >
           Cactus Fam
         </button>
         <button
           className={selectedLine === 'Original Oldies' ? 'selected' : ''}
-          onClick={() => setTimeout(() => handleLineSelection({ target: { value: 'Original Oldies' } }), transitionSpeed)}
+          onClick={() => setTimeout(() => expander = 1.1, handleLineSelection({ target: { value: 'Original Oldies' } }), transitionSpeed)}
         >
           Original Oldies
         </button>
@@ -96,7 +97,7 @@ function App() {
         <div id="treeDiagram" style={{ opacity: showDiagram ? 1 : 0, transition: 'opacity 1s' }}>
           <TreeDiagram numTrees={numTrees} data={data} depth={depth} lineName={selectedLine} />
         </div>
-        <div id="timeline" style={{ display: timelineVisible ? 'block' : 'none' }}>
+        <div id="timeline" expander={expander} style={{ display: timelineVisible ? 'block' : 'none' }}>
           <Timeline />
         </div>
       </div>
